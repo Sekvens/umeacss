@@ -1,5 +1,5 @@
 nav {
-	background: #FF0;
+	/* background: #FF0; */
 	width: 100%;
 }
 
@@ -11,8 +11,14 @@ nav ul {
 	background-color: #333;
 }
 
+nav .active {
+	background: #222;
+	font-weight: bold;
+}
+
 nav ul li {
 	float: right;
+	width: 144px;
 }
 
 nav .top {
