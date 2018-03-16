@@ -1,5 +1,4 @@
 nav {
-	/* background: #FF0; */
 	width: 100%;
 }
 
@@ -8,12 +7,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
-}
-
-nav .active {
-	background: #222;
-	font-weight: bold;
+	/* background-color: #333; */
 }
 
 nav ul li {
@@ -24,11 +18,46 @@ nav ul li {
 nav .top {
 	width: fit-content;
 	float: right;
+	margin: 0 auto;
+	position: relative;
+}
+
+nav .top .bevel {
+	border-color: #333; /*Same as li background-color*/
+	border-top: 0px;
+	border-style: solid;
+	border-width: 0px 15px 28px 15px; /*should have .top li height */
+	position: absolute;
+}
+
+nav .top .topleft {
+	left: 0px;
+	border-left-color: transparent;
+}
+
+nav .top .topright {
+	right: 0px;
+	border-right-color: transparent;
 }
 
 nav .bottom {
 	clear: right;
-	/* display: block; */
+	background-color: #333;
+}
+
+nav .top li.active, nav .bottom li.active {
+	background-color: #222;
+	font-weight: bold;
+}
+
+nav .top .topleft.active {
+	border-color: #222;
+	border-left-color: transparent;
+}
+
+nav .top .topright.active {
+	border-color: #222;
+	border-right-color: transparent;
 }
 
 nav .bottom li {
@@ -36,7 +65,17 @@ nav .bottom li {
 }
 
 nav .top li {
-	border-right: 1px solid #555;
+	border-right: 1px solid #aaa;
+	background-color: #333;
+	z-index: 10;
+}
+
+nav .top li:first-of-type {
+	margin-right: 15px; /*bevelWidth*/
+}
+
+nav .top li:last-of-type {
+	margin-left: 15px; /*bevelWidth*/
 }
 
 nav .bottom li a {
@@ -59,8 +98,8 @@ nav .bottom li a:hover {
 
 nav .bottom li:first-child {
 	border-right: none;
+	padding-right: 16px; /*bevelWidth + 1, not sure why the constant.*/
 }
-
 
 
 /* nav .bottom li:first-child {
