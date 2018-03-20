@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Programmering</title>
+		<link rel="stylesheet" type="text/css" href="content.css">
+		<link rel="stylesheet" type="text/css" href="navigation.css">
+		<link rel="stylesheet" type="text/css" href="general.css">
+	</head>
+	<body>
+		<div id="mainwrapper">
+			<nav>
+				<ul class="top">
+					<div class="bevel topright"></div>
+					<div class="bevel topleft"></div>
+					<li>
+						<a href="./about.html">Om mig</a>
+					</li>
+					<li>
+						<a href="./contact.html">Kontakt</a>
+					</li>
+				</ul>
+				<ul class="bottom">
+					<li>
+						<a href="./index.html">Start</a>
+					</li>
+					<li class="active">
+						<a href="./web.html">Webutveckling</a>
+					</li>
+					<li>
+						<a href="./game.html">Spelutveckling</a>
+					</li>
+					<li>
+						<a href="./hardware.html">Hårdvara &amp; OS</a>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<aside>
+					<h3>Innehåll</h3>
+					<ul>
+						<li>
+							<a href="#a-html">HTML</a>
+						</li>
+						<li>
+							<a href="#a-css">CSS</a>
+						</li>
+						<li>
+							<a href="#a-javascript">Javascript</a>
+							<ul>
+								<li>
+									<a href="#a-elm">Elm</a>
+								</li>
+								<li>
+									<a href="#a-node">Node.js</a>
+								</li>
+								<li>
+									<a href="#a-playcanvas">PlayCanvas</a>
+								</li>
+								<li>
+									<a href="#a-ajax">AJAX</a>
+								</li>
+								<li>
+									<a href="#a-react">React.js</a>
+								</li>
+								<li>
+									<a href="#a-jquery">jQuery</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#a-lorem">Lorem Ipsum</a>
+						</li>
+					</ul>
+				</aside>
+				<div class="articles">
+					<h1>Webutveckling</h1>
+					<article>
+						<h2>Webläsare</h2>
+						<p>När man besöker en websida så tolkar webläsaren koden som beskriver websidan. Standarden för webspråk är levande och ändras hela tiden, detta leder till att dom olika webläsarna kapplöper mot utvecklingen av dom olika webspråken. </p>
+					</article>
+					<article>
+						<h2 id="a-html">HTML</h2>
+						<p>HTML är ett språk som beskriver den semantiska strukturen av innehållet i en websida. Dom olika elementen i HTML kallas för taggar och omsluter andra taggar eller text. Innebörden av dom olika taggarna är endast semantisk information, exempelvis markerar man en titel med <emphasis>H</emphasis>-taggen och paragrafer med <emphasis>P</emphasis>-taggen. HTML ska ej användas för att beskriva stil eller utseende. Till detta har vi CSS. </p>
+						<p>Dagens webläsare är väldigt robusta när det gäller att tolka HTML och med de få taggarna som finns så är kan webläsarna oftast rendera websidornas HTML struktur även om det finns fel i den. Det är dock inte bara webläsare som besöker websidor. </p>
+						<p>Det finns flera program, kallade robotar eller spindlar, som besöker websidor i olika syften. Exempel på detta är googles robotar som besöker websidor för att indexera dessa. Dessa program renderar inte websidan i en webläsare då detta skulle ta väldigt lång tid. Däremot så försöker google förstå websidans innehåll och då är den semantiska struturen väldigt viktig eftersom att titlar, rubriker och taggar som säger vad som är menyer hjälper robotarna att förstå innehållet. </p>
+						<p>Yttligare en typ av program som är beroende av korrekt semantik är textläsare som används av folk med synproblem. Att tydligt markera var menyn är semantiskt gör att dessa personer kan hitta menyn utan att behöva låta programmet läsa upp allt innehåll i webläsaren. </p>
+					</article>
+					<article>
+						<h2 id="a-css">CSS</h2>
+						<p>CSS används för att beskriva utseendet på websidan. Det fungerar genom att man specificerar olika egenskaper för olika selektorer. När en webläsare tolkar CSS så läser den in selektorn och tolkar vad den försöker markera för typ av element. </p>
+						<p>Exempel på en simpel selektor skulle vara selektorn <emphasis>p</emphasis> som markerar alla motsvarande HTML paragraf taggar. Det går även skriva mer komplexa selektorer som exempelvis kan beskriva alla element i tredje kollumnen i en tabell eller alla rubriker som följer ett list-element.</p>
+						<p>När en webläsare har identifierat vilket eller vilka element selektorn markerar så tolkar den egenskaperna som har definerats. Dessa egenskaper beskriver i regel stil och utseende för det markerade elementet och det kan vara saker som exempelvis teckenstorlek, typsnittsvikt, bakgrundsfärg eller storlek. </p>
+						<p>CSS används också för att positionera HTML elementen och kan utföra simplare animationer. </p>
+					</article>
+					<article>
+						<h2 id="a-javascript">Javascript</h2>
+						<p>Javascript är ett prototypbaserat scriptspråk som har varit med länge. Normalt används det för att funtionalitet till en websida men idag har Javascript vuxit och blivit så stort och kraftfullt att det går att göra nästan allt med det. </p>
+						<p>Idag finns det många dialekter och bibliotek av javascript som ger mer funktionalitet eller definerar ramverk med speciella egenskaper som man kan vilja ha.</p>
+						<h4>Exempel</h4>
+						<ul>
+							<li>
+								<strong id="a-elm">Elm</strong><p> - Javascript som skrivs som ett funktionellt programmeringsspråk istället för objektorgienterat som javascript normalt sett skrivs som.</p>
+							</li>
+							<li>
+								<strong id="a-node">Node.js</strong><p> - En kraftfull och populär variant av javascript som är i första hand tänkt att köras på servers istället för direkt i webläsaren.</p>
+							</li>
+							<li>
+								<strong id="a-playcanvas">Playcanvas</strong><p> - En fullt fungerande spelmotor med editor som är implementerad i javascript och som är open source.</p>
+							</li>
+							<li>
+								<strong id="a-ajax">AJAX</strong><p> - Bibliotek som gör det möjligt att asyncront hämta data från servern. Dett möjliggör bland annat att man kan ladda in innehåll i endast en sektion av en websida istället för att ladda om hela websidan.</p>
+							</li>
+							<li>
+								<strong id="a-react">React.js</strong><p> - Ett kraftfullt ramverk för att skapa responsiva websidor med dynamisk laddning av data. Rekommenderar starkt att endast använda i kombination med JSX.</p>
+							</li>
+							<li>
+								<strong id="a-jquery">JQuery</strong><p>Ett väldigt populärt lättvikts bibliotek för att skriva Javascript. Syntax skiljer sig lite från klassisk javascript och det tillför ett par färdiga funktioner som ej är implementerade i vanlig javascript. Många nybörjare börjar med JQuery då det är lättare att strukturera och förstå dess syntax men det går att blanda Jquery med andra sorters javascript.</p>
+							</li>
+						</ul>
+					</article>
+					<article>
+						<h3 id="a-lorem">Lorem Ipsum</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada. Blandit libero volutpat sed cras. Nisl suscipit adipiscing bibendum est ultricies. Vel quam elementum pulvinar etiam non quam lacus. Integer feugiat scelerisque varius morbi enim nunc. Eget nulla facilisi etiam dignissim diam. Netus et malesuada fames ac turpis egestas integer eget. Quam pellentesque nec nam aliquam sem. Pellentesque nec nam aliquam sem et tortor consequat id porta. Eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Neque viverra justo nec ultrices dui sapien eget. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Euismod in pellentesque massa placerat duis ultricies lacus sed. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Est velit egestas dui id ornare arcu odio ut. Risus in hendrerit gravida rutrum. Neque convallis a cras semper auctor neque. Cras semper auctor neque vitae tempus quam pellentesque. Volutpat lacus laoreet non curabitur gravida arcu ac. Nulla pellentesque dignissim enim sit amet. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Ut etiam sit amet nisl purus in mollis. Facilisis volutpat est velit egestas dui id. Lorem ipsum dolor sit amet consectetur adipiscing elit.
+						</p>
+						<p>
+							Et netus et malesuada fames. Egestas dui id ornare arcu. Fringilla est ullamcorper eget nulla facilisi etiam. Aliquam purus sit amet luctus venenatis lectus magna. Egestas purus viverra accumsan in nisl. Neque vitae tempus quam pellentesque nec. Imperdiet dui accumsan sit amet nulla facilisi. Tristique risus nec feugiat in fermentum posuere. Turpis egestas sed tempus urna et pharetra pharetra. Leo integer malesuada nunc vel risus. Nec dui nunc mattis enim ut tellus elementum. Vel fringilla est ullamcorper eget nulla. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Convallis posuere morbi leo urna molestie. In dictum non consectetur a erat nam at.
+						</p>
+						<p>
+							Fringilla ut morbi tincidunt augue interdum velit euismod in. Curabitur gravida arcu ac tortor dignissim convallis. Dolor sed viverra ipsum nunc aliquet. Sed velit dignissim sodales ut eu. Commodo viverra maecenas accumsan lacus vel. Metus vulputate eu scelerisque felis imperdiet proin. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. Habitasse platea dictumst vestibulum rhoncus est. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Bibendum neque egestas congue quisque egestas diam. Facilisi nullam vehicula ipsum a arcu. Quam nulla porttitor massa id neque aliquam vestibulum. Ornare aenean euismod elementum nisi. Posuere ac ut consequat semper viverra nam libero.
+						</p>
+						<p>
+							Volutpat sed cras ornare arcu dui vivamus arcu. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse. Sem viverra aliquet eget sit amet tellus. Eget mauris pharetra et ultrices neque ornare aenean. Eu non diam phasellus vestibulum. Suspendisse sed nisi lacus sed. Quis hendrerit dolor magna eget est lorem ipsum. Dui vivamus arcu felis bibendum ut. Scelerisque varius morbi enim nunc. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Nunc sed blandit libero volutpat sed cras ornare. Volutpat sed cras ornare arcu dui. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Urna duis convallis convallis tellus. Enim nec dui nunc mattis enim ut tellus elementum.
+						</p>
+					</article>
+				</div>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>

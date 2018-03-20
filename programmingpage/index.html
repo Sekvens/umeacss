@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Programmering</title>
+		<link rel="stylesheet" type="text/css" href="content.css">
+		<link rel="stylesheet" type="text/css" href="navigation.css">
+		<link rel="stylesheet" type="text/css" href="general.css">
+	</head>
+	<body>
+		<div id="mainwrapper">
+			<nav>
+				<ul class="top">
+					<div class="bevel topright"></div>
+					<div class="bevel topleft"></div>
+					<li>
+						<a href="./about.html">Om mig</a>
+					</li>
+					<li>
+						<a href="./contact.html">Kontakt</a>
+					</li>
+				</ul>
+				<ul class="bottom">
+					<li class="active">
+						<a href="./index.html">Start</a>
+					</li>
+					<li>
+						<a href="./web.html">Webutveckling</a>
+					</li>
+					<li>
+						<a href="./game.html">Spelutveckling</a>
+					</li>
+					<li>
+						<a href="./hardware.html">Hårdvara &amp; OS</a>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<article>
+					<h1>Välkommen!</h1>
+					<p>Om du är föreläsare eller labassistent för CSS-baserad webdesign så kommer här en lista på var jag har impelmenterat dom olika kriteriumen. </p>
+					<ul>
+						<li>
+							<p>
+								Webbplatsen skall omfatta minst tre html-sidor samt ett externt CSS-dokument. En av html-sidorna skall fungera som startsida och ha namnet "index.html".
+							</p>
+							<p class="comment">Jag har fokuserat på att föra in en grund-struktur men endast spenderat tid på att fylla på med innehåll i "Om mig" och "Webutveckling" kategorierna. CSS dokumenten är uppdelade efter navigation, generella värden och content (vilket syftar på main taggen).</p>
+						</li>
+						<li>
+							<p>
+								html-koden skall vara semantiskt korrekt. Detta innebär exempelvis att en rubrik alltid skall utgöras av ett h-element, ett stycke text av ett p-element, etcetera.
+							</p>
+							<p class="comment">Jag har försökt hålla innehållet semantiskt korrekt och använd W3's validator. Det finns några fall då jag var osäker vad som anses som best practice men generellt så har jag inte använt id om det verkligen inte kan finnas fler. I fall då jag anser att det är möjligt att det kan finnas flera av dessa element så har jag använt class. Detta är för att den semantiska innebörden av ID är att den är unik och det är det som är viktigt att veta som utvecklare när man väl stöter på ett id. </p>
+						</li>
+						<li>
+							<p>
+								All formatering av element skall ske i det externa CSS-dokumentet.
+							</p>
+							<p class="comment">Det finns ingen inline CSS.</p>
+						</li>
+						<li>
+							<p>
+								Webbplatsens layout skall baseras på div-element (med tillhörande stilregler i ditt CSS-dokument). Du får således inte använda dig av tabeller för att skapa webbplatsens layout.
+							</p>
+							<p class="comment">Jag använder inga tabeller och förstår att dessa finns för att presentera tabulär data, inte för att användas för styling. </p>
+						</li>
+						<li>
+							<p>
+								Webbplatsens layout skall vara centrerad i webbläsaren och ha antingen en fast bredd definierad i pixlar eller en maximal bredd definierad i pixlar (observera dock att texten i din layout inte skall vara centrerad).
+							</p>
+							<p class="comment">Jag tyckte denna var lite underligt formulerad och jag ville egentligen ha en design som flyter längst högersidan men har centrerat allt för att uppfylla kravet för denna. Jag har definerat både max och min bredd för media query och utan. </p>
+						</li>
+						<li>
+							<p>
+								Layouten skall vara flerkolumnbaserad (minst två kolumner)
+							</p>
+							<p class="comment">Har haft problem att komma på intressant innehåll och får mycket tidningskänsla så jag la in en två kollumns layout på "Webutveckling" där jag har placerat en index meny i höger kollumnen. Jag tänkte att man kanske kan ha twitter nyheter eller reklam i det tomma utrymmet men har inte vågat lägga in något script då det känns som extrajobb för er att rätta det. </p>
+						</li>
+						<li>
+							<p>
+								Lägg till minst en bild direkt i din htmlkod.
+							</p>
+							<p class="comment">Jag har lagt in en bild på mig under "Om mig".</p>
+						</li>
+						<li>
+							<p>
+								Det skall finnas en bakgrundsbild definierad i css på valfritt HTML-element.
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								Det skall finnas en fungerande meny genom vilken en användare kan navigera mellan webbplatsens olika sidor.
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								Inom den här examinationen får alla CSS selektorer användas, men dessa måste finnas med: ID-selektor, Klass-selektor, Descendant selektor (kallas ibland för kontextuell selektor)
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								På minst en av de tre html-sidorna skall ankarlänkar användas. Detta innebär länkar inom det aktuella dokumentet (exempelvis en länk från den övre delen av dokumentet till en specifik sektion i den nedre delen av det aktuella dokumentet).
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								Dina sidor ska innehålla en lista (ul eller ol) som presenteras horisontellt istället för vertikalt.
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								All text på sidorna ska han en angiven textstorlek i ditt CSS. Alla textstorlekar ska anges med relativa värden i enheten em.
+							</p>
+							<p class="comment"></p>
+						</li>
+						<li>
+							<p>
+								Utöver ovanstående specifikation så ska din CSS-fil innehålla en ”media query” för mobilanassning som genomför följande ändringar när webbläsarens bredd understiger 650 pixlar:
+							</p>
+							<ul>
+								<li>
+									<p>Sidorna ska vara utformade så att layoutens totala bredd avgörs av hur stort fönstret är. Med andra ord ska inte din layout ha en fix bredd angiven i antal pixlar. Din layout ska i stället präglas av att sidans textinnehåll utnyttjar en viss proportion av fönstrets faktiska bredd. När fönsterbredden förändras ska även layoutens bredd förändras.</p>
+								</li>
+								<li>
+									<p>Din horisontella lista ska återgå till att presenteras vertikalt istället för horisontellt.</p>
+								</li>
+								<li>
+									<p>Dina kolumner ska inte längre ligga bredvid varandra utom presenteras löpande efter varandra.</p>
+								</li>
+							</ul>
+							<p class="comment"></p>
+						</li>
+
+					</ul>
+				</article>
+			</main>
+			<footer>
+
+			</footer>
+		</div>
+	</body>
+</html>

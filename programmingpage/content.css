@@ -1,0 +1,81 @@
+main {
+	background-image: url("./img/spiration_dark.png");
+	color: #DDD;
+	padding: 15px;
+	margin: 0px;
+	margin-top: 5px;
+	border-radius: 0px 0px 15px 15px;
+	display: flex;
+}
+
+main aside {
+	flex: 0 0 255px;
+}
+
+main aside ul {
+	list-style: none;
+}
+
+article {
+	padding: 15px 0px 15px 0px;
+}
+
+article p {
+	font-size: 1em;
+	margin: 0px;
+}
+
+article h1 {
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+article h2 {
+	font-size: 1.2em;
+}
+
+article h1, h2, h3 {
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+}
+
+article ul {
+	list-style-type: square;
+}
+
+article strong {
+	font-weight: 700;
+}
+
+main a:link {
+	color: #F50;
+}
+
+main a:visited {
+	color: #F50;
+}
+
+main a:hover {
+	color: #F30;
+}
+
+img {
+	width: 128px;
+	height: 128px;
+	padding: 16px;
+}
+
+.floatright {
+	float: right;
+}
+
+article .comment {
+	color: rgb(235, 119, 69);
+	font-style: italic;
+}
+
+@media only screen and (max-width: 650px) {
+	main {
+		flex-direction: column;
+	}
+}

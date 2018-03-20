@@ -1,0 +1,131 @@
+nav {
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: right;
+	width: 160;
+}
+nav .bottom li {
+	max-width: 160px;
+	width: 100%;
+}
+
+nav .top {
+	width: fit-content;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+	font-size: 0.8em;
+}
+
+nav .top .bevel {
+	border-color: #333; /*Same as li background-color*/
+	border-top: 0px;
+	border-style: solid;
+	border-width: 0px 15px 29px 15px; /*should have .top li height */
+	position: absolute;
+}
+
+nav .top .topleft {
+	left: 0px;
+	border-left-color: transparent;
+}
+
+nav .top .topright {
+	right: 0px;
+	border-right-color: transparent;
+}
+
+nav .bottom {
+	clear: right;
+	background-color: #333;
+	font-size: 1.1em;
+}
+
+nav .top li.active, nav .bottom li.active {
+	background-color: #222;
+	font-weight: bold;
+}
+
+nav .top .topleft.active {
+	border-color: #222;
+	border-left-color: transparent;
+}
+
+nav .top .topright.active {
+	border-color: #222;
+	border-right-color: transparent;
+}
+
+nav .bottom li {
+	border-right: 1px solid #aaa;
+}
+
+nav .top li {
+	border-right: 1px solid #aaa;
+	background-color: #333;
+	z-index: 10;
+}
+
+nav .top li:first-of-type {
+	margin-right: 15px; /*bevelWidth*/
+}
+
+nav .top li:last-of-type {
+	margin-left: 15px; /*bevelWidth*/
+}
+
+nav .bottom li a {
+	display: block;
+	color: #FFF;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav .top li a {
+	display: block;
+	color: #AAA;
+	padding: 5px 16px;
+	text-decoration: none;
+}
+
+nav .bottom li a:hover {
+	background-color: #222;
+}
+
+nav .bottom li:first-child {
+	border-right: none;
+	padding-right: 16px; /*bevelWidth + 1, not sure why the constant.*/
+}
+
+@media only screen and (max-width: 650px) {
+	nav .bottom li:first-child {
+		padding-right: 0px;
+	}
+
+	nav .bottom {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	nav .bottom li {
+		flex: 0 0 199px;
+		border: none;
+		min-width: 100px;
+		max-width: 200px;
+		width: 160px;
+	}
+
+	nav .bottom li:nth-child(even) {
+		border-left: 1px solid #aaa;
+	}
+}
