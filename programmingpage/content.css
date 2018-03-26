@@ -59,6 +59,11 @@ main a:hover {
 	color: #F30;
 }
 
+.tag {
+	font-style: italic;
+	font-weight: 600;
+}
+
 img {
 	width: 128px;
 	height: 128px;

@@ -5,14 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="content.css">
 		<link rel="stylesheet" type="text/css" href="navigation.css">
 		<link rel="stylesheet" type="text/css" href="general.css">
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<div id="mainwrapper">
 			<nav>
 				<ul class="top">
-					<div class="bevel topright"></div>
-					<div class="bevel topleft"></div>
 					<li>
+						<div class="bevel topright"></div>
+						<div class="bevel topleft"></div>
 						<a href="./about.html">Om mig</a>
 					</li>
 					<li>
@@ -85,37 +86,37 @@
 							<p>
 								Det skall finnas en bakgrundsbild definierad i css på valfritt HTML-element.
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Har en bakgrundbild på main. Ville ha den ljusare men det var väldigt petigt att få önskad effekt i CSS och öppna en bildeditor är utanför min ambionsnivå. </p>
 						</li>
 						<li>
 							<p>
 								Det skall finnas en fungerande meny genom vilken en användare kan navigera mellan webbplatsens olika sidor.
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Jag har gjort en klassisk-copy-paste meny i HTML och detta var den sista gången någonsin. Tydligt exempel på varför Angular.js, React.js och Vue.js behövs.</p>
 						</li>
 						<li>
 							<p>
 								Inom den här examinationen får alla CSS selektorer användas, men dessa måste finnas med: ID-selektor, Klass-selektor, Descendant selektor (kallas ibland för kontextuell selektor)
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Används överallt i CSSen.</p>
 						</li>
 						<li>
 							<p>
 								På minst en av de tre html-sidorna skall ankarlänkar användas. Detta innebär länkar inom det aktuella dokumentet (exempelvis en länk från den övre delen av dokumentet till en specifik sektion i den nedre delen av det aktuella dokumentet).
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Finns i Webutveckling</p>
 						</li>
 						<li>
 							<p>
 								Dina sidor ska innehålla en lista (ul eller ol) som presenteras horisontellt istället för vertikalt.
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Huvudmenyn är en ul som presenteras horisontellt i över 650px bredd.</p>
 						</li>
 						<li>
 							<p>
 								All text på sidorna ska han en angiven textstorlek i ditt CSS. Alla textstorlekar ska anges med relativa värden i enheten em.
 							</p>
-							<p class="comment"></p>
+							<p class="comment">Fixat. </p>
 						</li>
 						<li>
 							<p>
@@ -132,9 +133,9 @@
 									<p>Dina kolumner ska inte längre ligga bredvid varandra utom presenteras löpande efter varandra.</p>
 								</li>
 							</ul>
-							<p class="comment"></p>
+							<p class="comment">650px är en jättekonstig media query men fine. Jag gjorde min horisontella lista till en vertikal tvåkollumns lista för att det skulle se konstigt ut. 650px är strax under tablet storlek men större än mobil vilket gjorde att jag nu valde en mer mobilanpassad design för att det inte skulle se galet ut eller kräva en media query som täcker "tablet"-spannet. </p>
+							<p class="comment">Kollumnerna kollapsar i "Webutveckling".</p>
 						</li>
-
 					</ul>
 				</article>
 			</main>

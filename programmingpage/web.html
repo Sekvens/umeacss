@@ -5,14 +5,15 @@
 		<link rel="stylesheet" type="text/css" href="content.css">
 		<link rel="stylesheet" type="text/css" href="navigation.css">
 		<link rel="stylesheet" type="text/css" href="general.css">
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<div id="mainwrapper">
 			<nav>
 				<ul class="top">
-					<div class="bevel topright"></div>
-					<div class="bevel topleft"></div>
 					<li>
+						<div class="bevel topright"></div>
+						<div class="bevel topleft"></div>
 						<a href="./about.html">Om mig</a>
 					</li>
 					<li>
@@ -80,7 +81,7 @@
 					</article>
 					<article>
 						<h2 id="a-html">HTML</h2>
-						<p>HTML är ett språk som beskriver den semantiska strukturen av innehållet i en websida. Dom olika elementen i HTML kallas för taggar och omsluter andra taggar eller text. Innebörden av dom olika taggarna är endast semantisk information, exempelvis markerar man en titel med <emphasis>H</emphasis>-taggen och paragrafer med <emphasis>P</emphasis>-taggen. HTML ska ej användas för att beskriva stil eller utseende. Till detta har vi CSS. </p>
+						<p>HTML är ett språk som beskriver den semantiska strukturen av innehållet i en websida. Dom olika elementen i HTML kallas för taggar och omsluter andra taggar eller text. Innebörden av dom olika taggarna är endast semantisk information, exempelvis markerar man en titel med <span class="tag">H</span>-taggen och paragrafer med <span class="tag">P</span>-taggen. HTML ska ej användas för att beskriva stil eller utseende. Till detta har vi CSS. </p>
 						<p>Dagens webläsare är väldigt robusta när det gäller att tolka HTML och med de få taggarna som finns så är kan webläsarna oftast rendera websidornas HTML struktur även om det finns fel i den. Det är dock inte bara webläsare som besöker websidor. </p>
 						<p>Det finns flera program, kallade robotar eller spindlar, som besöker websidor i olika syften. Exempel på detta är googles robotar som besöker websidor för att indexera dessa. Dessa program renderar inte websidan i en webläsare då detta skulle ta väldigt lång tid. Däremot så försöker google förstå websidans innehåll och då är den semantiska struturen väldigt viktig eftersom att titlar, rubriker och taggar som säger vad som är menyer hjälper robotarna att förstå innehållet. </p>
 						<p>Yttligare en typ av program som är beroende av korrekt semantik är textläsare som används av folk med synproblem. Att tydligt markera var menyn är semantiskt gör att dessa personer kan hitta menyn utan att behöva låta programmet läsa upp allt innehåll i webläsaren. </p>
@@ -88,7 +89,7 @@
 					<article>
 						<h2 id="a-css">CSS</h2>
 						<p>CSS används för att beskriva utseendet på websidan. Det fungerar genom att man specificerar olika egenskaper för olika selektorer. När en webläsare tolkar CSS så läser den in selektorn och tolkar vad den försöker markera för typ av element. </p>
-						<p>Exempel på en simpel selektor skulle vara selektorn <emphasis>p</emphasis> som markerar alla motsvarande HTML paragraf taggar. Det går även skriva mer komplexa selektorer som exempelvis kan beskriva alla element i tredje kollumnen i en tabell eller alla rubriker som följer ett list-element.</p>
+						<p>Exempel på en simpel selektor skulle vara selektorn <span class="tag">p</span> som markerar alla motsvarande HTML paragraf taggar. Det går även skriva mer komplexa selektorer som exempelvis kan beskriva alla element i tredje kollumnen i en tabell eller alla rubriker som följer ett list-element.</p>
 						<p>När en webläsare har identifierat vilket eller vilka element selektorn markerar så tolkar den egenskaperna som har definerats. Dessa egenskaper beskriver i regel stil och utseende för det markerade elementet och det kan vara saker som exempelvis teckenstorlek, typsnittsvikt, bakgrundsfärg eller storlek. </p>
 						<p>CSS används också för att positionera HTML elementen och kan utföra simplare animationer. </p>
 					</article>

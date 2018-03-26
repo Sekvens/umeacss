@@ -11,8 +11,9 @@ nav ul {
 
 nav ul li {
 	float: right;
-	width: 160;
+	width: 160px;
 }
+
 nav .bottom li {
 	max-width: 160px;
 	width: 100%;
@@ -127,5 +128,9 @@ nav .bottom li:first-child {
 
 	nav .bottom li:nth-child(even) {
 		border-left: 1px solid #aaa;
+	}
+
+	nav ul li {
+		width: 100px;
 	}
 }
